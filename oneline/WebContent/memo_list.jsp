@@ -33,7 +33,10 @@
 	rs.close();
 	pstmt.close();
 	con.close(); 
-	out.println("DB조회 성공");
+	out.println("DB조회 성공"); 
+
 %>
+<br><input type=button value="글 작성" OnClick="window.location='memo01.html'">
+
 </body>
 </html>
