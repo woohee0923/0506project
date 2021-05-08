@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>memo</title>
+</head>
+<style>
+	h1 { 
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background: #00bbf0;
+	padding:5px;
+	}
+	ul {list-style-type: none;}
+	
+    input[type=text]{
+            height:30px;
+            width:500px;
+            border-radius: 8px;
+            font-size: 20px;
+    }
+    input[type=submit] {
+    		background-color:#d3d3d3;
+            text-align: center;
+            width: 70px;
+            height: 30px;
+            font-size: 13px;
+            font-weight:bold;
+            outline: 5;
+    }
+    body ul {
+    padding : 40px;
+    background-color : #005792;
+    color : white;
+    font-weight:bold;
+    }
+    
+    .memo {
+    	margin-bottom: 20px;
+    	margin-top: 0;
+    	color: #fff;
+    	border-width: 0;
+    	border-left-width: 5px;
+   	 	padding: 10px;
+    	border-radius: 15px;
+	}
+	.memo.first {
+    	color: #555;
+    	font-weight:bold;
+    	background: #7189bf;
+	}
+	.memo.second {
+    	background: #df7599;
+    	font-weight:bold;
+	}
+	.memo.third {
+    	background: #ffc785;
+    	font-weight:bold;	
+	}
+	.memo.fourth {
+    	background: #72d6c9;
+    	font-weight:bold;
+	}   
+    
+</style>
+
+<body>
+	<h1>MEMO for 2021</h1>
+	<ul>
+		<li>Name: 정우희</li>
+		<li>Department: 컴퓨터과학과</li>
+		<li>Grade: 2학년</li>
+		<li>E-mail: 202033030@yiu.ac.kr</li>
+	</ul>
+	<form method="post" action="memo_write.jsp">
+	
+	<div>
+	<input type="text" name="memo"></input>
+	<input type="submit" value="등록" style="background: black; color:white; border-radius: 20px "></input>
+	</div>
+	
+	<br>
+	
+	<div class="memo first">
+        <input type="button" value="x"></input>
+        <strong><span style="color: #e61c5d;">Today</span> <i>2021.04.24</i></strong> 지금 시간은 8시 47분.
+    </div>
+    <div class="memo second">
+        <input type="button" value="x"></input>
+		<strong> <i>2021. 04. 23</i></strong> 오늘은 4월 23일.
+    </div>
+    <div class="memo third">
+        <input type="button" value="x"></input>
+        <strong><i>2021. 04. 23</i></strong> 오늘은 금요일.
+    </div>
+    <div class="memo fourth">
+    	<input type="button" value="x"></input>
+        <strong><i>2021. 04. 23</i></strong> 화이팅~~~~.
+    </div>
+    
+	</form>
+</body>
+</html>
